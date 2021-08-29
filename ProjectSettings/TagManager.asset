@@ -47,3 +47,9 @@ TagManager:
   - name: Actor
     uniqueID: 2385303347
     locked: 0
+  - name: Forground
+    uniqueID: 1821245539
+    locked: 0
+  - name: UI
+    uniqueID: 3033180575
+    locked: 0

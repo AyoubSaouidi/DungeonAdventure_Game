@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2239621103150485116
+--- !u!1 &3380075680670781908
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5913242644804128632}
-  - component: {fileID: 2904696631452894825}
-  - component: {fileID: 14280615877211477}
-  - component: {fileID: 2910111408261018819}
+  - component: {fileID: 3380075680670781912}
+  - component: {fileID: 3380075680670781913}
+  - component: {fileID: 3380075680670781910}
+  - component: {fileID: 3380075680670781911}
   m_Layer: 10
-  m_Name: Golden Chest
+  m_Name: Grey Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5913242644804128632
+--- !u!4 &3380075680670781912
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2239621103150485116}
+  m_GameObject: {fileID: 3380075680670781908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.852, y: 0.378, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2904696631452894825
+--- !u!212 &3380075680670781913
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2239621103150485116}
+  m_GameObject: {fileID: 3380075680670781908}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: -1599257631
   m_SortingLayer: 1
   m_SortingOrder: 5
-  m_Sprite: {fileID: -3189199641510698939, guid: b5fdce270cd8bf749a1e812f373a6eaf, type: 3}
+  m_Sprite: {fileID: 6120071002681643305, guid: b5fdce270cd8bf749a1e812f373a6eaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,17 +84,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &14280615877211477
+--- !u!61 &3380075680670781910
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2239621103150485116}
+  m_GameObject: {fileID: 3380075680670781908}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -110,17 +110,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
---- !u!114 &2910111408261018819
+--- !u!114 &3380075680670781911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2239621103150485116}
+  m_GameObject: {fileID: 3380075680670781908}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16202c9336d197846ac3a1bc978f4787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emptyChestSprite: {fileID: -8037741742428892562, guid: b5fdce270cd8bf749a1e812f373a6eaf, type: 3}
+  emptyChestSprite: {fileID: 7366256110178227557, guid: b5fdce270cd8bf749a1e812f373a6eaf, type: 3}
   pesosAmount: 10
+  floatingTextStyle:
+    text: 
+    fontSize: 40
+    fontStyle: 1
+    color: {r: 0.54901963, g: 0.63529414, b: 0.70980394, a: 1}
+    motion: {x: 0, y: 50}
+    duration: 1

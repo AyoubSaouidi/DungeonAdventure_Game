@@ -8,14 +8,14 @@ public class MouvementManager : MonoBehaviour
 
     [SerializeField]
     public float speed;
-    private float speedStamp;
+    public float speedStamp;
 
     public Vector2 moveDirection;
 
     // Start is called before the first frame update
     void Start()
     {
-        speedStamp = 1f;
+        speedStamp = 30f;
         speed = speedStamp;
         moveDirection = Vector2.zero;
     }
@@ -67,16 +67,18 @@ public class MouvementManager : MonoBehaviour
             speedFactor = 0.7f;
         speed = speedStamp * speedFactor;
 
-        // X AXIS
-		if (!playerController.collisionManager.rayCastHitX)
-        {
-            transform.Translate(new Vector3(moveDirection.x * speed, 0, 0) * Time.deltaTime);
-        }
+        //      // X AXIS
+        //if (!playerController.collisionManager.rayCastHitX)
+        //      {
+        //          transform.Translate(new Vector3(moveDirection.x * speed, 0, 0) * Time.deltaTime);
+        //      }
 
-        // Y Axis
-        if (!playerController.collisionManager.rayCastHitY)
-        {
-            transform.Translate(new Vector3(0,moveDirection.y * speed, 0) * Time.deltaTime);
-        }
+        //      // Y Axis
+        //      if (!playerController.collisionManager.rayCastHitY)
+        //      {
+        //          transform.Translate(new Vector3(0,moveDirection.y * speed, 0) * Time.deltaTime);
+        //      }
+
+        playerController.rigidBody.velocity = moveDirection * speed * Time.deltaTime;
     }
 }

@@ -11,6 +11,9 @@ public class Portal : Collidable
 		// NO PLAYER 
 		if (!hit.CompareTag("Player")) return;
 
+		// Save DATA
+		GameManager.instance.SaveState();
+
 		// TELEPORT Player to a random Gungeon
 		string sceneName = sceneNames[Random.Range(0, sceneNames.Length)];
 		EditorSceneManager.LoadScene(sceneName);

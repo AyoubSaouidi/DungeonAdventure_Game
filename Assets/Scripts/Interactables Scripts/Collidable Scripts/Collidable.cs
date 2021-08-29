@@ -5,37 +5,21 @@ using UnityEngine;
 
 public class Collidable : MonoBehaviour
 {
-
-    protected ContactFilter2D filter;
-    protected BoxCollider2D boxCollider;
-    protected Collider2D[] hits = new Collider2D[10];
-
-
-    // Start is called before the first frame update
-    protected virtual void Start()
-    {
-        boxCollider = GetComponent<BoxCollider2D>();
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+        ProcessCollision(collision.collider);
     }
 
-    // Update is called once per frame
-    protected virtual void Update()
-    {
-        // CHECK IF we collide with other objects (OVERLAP)
-        boxCollider.OverlapCollider(filter, hits);
-
-		// DEPENDING TO OBJECT DO SOMETHING
-		for (int i = 0; i < hits.Length; i++)
-		{
-
-            if (hits[i] == null)
-                continue;
-
-            OnCollide(hits[i]);
-
-            hits[i] = null;
-
-        }
+	private void OnTriggerEnter2D(Collider2D collider)
+	{
+        ProcessCollision(collider);
 	}
+
+	protected virtual void ProcessCollision(Collider2D collider)
+	{
+        // DEPENDING TO OBJECT DO SOMETHING
+        OnCollide(collider);
+    }
 
 	protected virtual void OnCollide(Collider2D hit)
 	{

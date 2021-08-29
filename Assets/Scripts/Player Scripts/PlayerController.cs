@@ -12,14 +12,14 @@ public class PlayerController : MonoBehaviour
     public CollisionManager collisionManager;
 
     // Collider
-    public BoxCollider2D boxCollider;
-    //public Rigidbody2D rigidBody;
+    public CapsuleCollider2D capsuleCollider2D;
+	public Rigidbody2D rigidBody;
 
-    // Start is called before the first frame update
-    void Start()
+	// Start is called before the first frame update
+	void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
-        //rigidBody = GetComponent<Rigidbody2D>();
-    }
+        capsuleCollider2D = GetComponent<CapsuleCollider2D>();
+		rigidBody = GetComponent<Rigidbody2D>();
+	}
 
 }
