@@ -9,7 +9,7 @@ public class Collectable : Collidable
 
 	protected override void OnCollide(Collider2D hit)
 	{
-		if (hit.gameObject.CompareTag("Player"))
+		if (hit.name == "Player")
 			OnCollect();
 	}
 

@@ -10,6 +10,8 @@ public class InputManager : MonoBehaviour
     public bool isLeftPressed;
     public bool isUpPressed;
     public bool isDownPressed;
+    public bool isAttackPressed;
+    public bool isHealPressed;
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +63,26 @@ public class InputManager : MonoBehaviour
         else
         {
             isDownPressed = false;
+        }
+
+        // IS ATTACK PRESSED
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            isAttackPressed = true;
+        }
+        else
+        {
+            isAttackPressed = false;
+        }
+
+        // IS HEAL PRESSED
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            isHealPressed = true;
+        }
+        else
+        {
+            isHealPressed = false;
         }
     }
 }

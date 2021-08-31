@@ -10,12 +10,10 @@ public class PoolState : MonoBehaviour
 	private void OnEnable()
 	{
 		Invoke("Destroy",duration);
-		Debug.Log("TEXT IS HERE");
 	}
 
 	private void OnDisable()
 	{
-		Debug.Log("TEXT IS GONE");
 		CancelInvoke();
 	}
 

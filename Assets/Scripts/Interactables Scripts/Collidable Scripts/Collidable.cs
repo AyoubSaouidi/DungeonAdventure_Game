@@ -15,7 +15,7 @@ public class Collidable : MonoBehaviour
         ProcessCollision(collider);
 	}
 
-	protected virtual void ProcessCollision(Collider2D collider)
+	private void ProcessCollision(Collider2D collider)
 	{
         // DEPENDING TO OBJECT DO SOMETHING
         OnCollide(collider);

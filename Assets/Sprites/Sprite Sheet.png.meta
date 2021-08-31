@@ -496,10 +496,10 @@ TextureImporter:
     second: Sprite Sheet_163
   - first:
       213: 47894327991080701
-    second: Sprite Sheet_164
+    second: small_squeleton
   - first:
       213: -4584201696134505253
-    second: Sprite Sheet_165
+    second: squeleton
   - first:
       213: -5865520554921411619
     second: Sprite Sheet_166
@@ -517,10 +517,10 @@ TextureImporter:
     second: Sprite Sheet_170
   - first:
       213: 7686900041394703527
-    second: Sprite Sheet_171
+    second: small_goblin
   - first:
       213: 3583946650306141629
-    second: Sprite Sheet_172
+    second: masked_goblin
   - first:
       213: -7529409034559793066
     second: Sprite Sheet_173
@@ -532,7 +532,7 @@ TextureImporter:
     second: Sprite Sheet_175
   - first:
       213: -9118077844224114715
-    second: Sprite Sheet_176
+    second: zombie
   - first:
       213: -4435517446606005095
     second: Sprite Sheet_177
@@ -562,7 +562,7 @@ TextureImporter:
     second: Sprite Sheet_185
   - first:
       213: 1764906172648776154
-    second: Sprite Sheet_186
+    second: small_demon
   - first:
       213: 3546304749451891371
     second: Sprite Sheet_187
@@ -694,10 +694,10 @@ TextureImporter:
     second: Sprite Sheet_229
   - first:
       213: -1447768977559450194
-    second: Sprite Sheet_230
+    second: wise_2
   - first:
       213: -6431259247675284952
-    second: Sprite Sheet_231
+    second: wise_1
   - first:
       213: 1028509175933703199
     second: Sprite Sheet_232
@@ -712,7 +712,7 @@ TextureImporter:
     second: Sprite Sheet_235
   - first:
       213: -4727457477995232864
-    second: Sprite Sheet_236
+    second: traveller_npc
   - first:
       213: 548851749874318646
     second: Sprite Sheet_237
@@ -740,6 +740,21 @@ TextureImporter:
   - first:
       213: 82908905727667332
     second: Sprite Sheet_245
+  - first:
+      213: -4002911073176323092
+    second: weapon_0
+  - first:
+      213: 2923392876379015724
+    second: weapon_1
+  - first:
+      213: 2831728386828934825
+    second: weapon_3
+  - first:
+      213: -5824490960862133792
+    second: weapon_2
+  - first:
+      213: -2991790927863107190
+    second: weapon_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -4283,7 +4298,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet_164
+      name: small_squeleton
       rect:
         serializedVersion: 2
         x: 0
@@ -4304,7 +4319,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet_165
+      name: squeleton
       rect:
         serializedVersion: 2
         x: 16
@@ -4430,7 +4445,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet_171
+      name: small_goblin
       rect:
         serializedVersion: 2
         x: 0
@@ -4451,7 +4466,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet_172
+      name: masked_goblin
       rect:
         serializedVersion: 2
         x: 16
@@ -4535,7 +4550,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet_176
+      name: zombie
       rect:
         serializedVersion: 2
         x: 80
@@ -4745,7 +4760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet_186
+      name: small_demon
       rect:
         serializedVersion: 2
         x: 0
@@ -5669,7 +5684,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet_230
+      name: wise_2
       rect:
         serializedVersion: 2
         x: 128
@@ -5690,7 +5705,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet_231
+      name: wise_1
       rect:
         serializedVersion: 2
         x: 144
@@ -5795,7 +5810,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet_236
+      name: traveller_npc
       rect:
         serializedVersion: 2
         x: 96
@@ -6000,6 +6015,111 @@ TextureImporter:
       bones: []
       spriteID: 48c2d92e53d862100800000000000000
       internalID: 82908905727667332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_0
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 225
+        width: 10
+        height: 27
+      alignment: 9
+      pivot: {x: 0.49999848, y: 0.07946196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebf8d7569dc278c0800000000000000
+      internalID: -4002911073176323092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 225
+        width: 10
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5106369, y: 0.06758118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a8a7f055af19820800000000000000
+      internalID: 2923392876379015724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_3
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 225
+        width: 10
+        height: 27
+      alignment: 9
+      pivot: {x: 0.49999696, y: 0.095594056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae1455f6f15c4720800000000000000
+      internalID: 2831728386828934825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 193
+        width: 10
+        height: 27
+      alignment: 9
+      pivot: {x: 0.51063997, y: 0.08959525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1c650a4504b2fa0800000000000000
+      internalID: -5824490960862133792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 193
+        width: 10
+        height: 27
+      alignment: 9
+      pivot: {x: 0.51063997, y: 0.059719216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81bb7690060b76d0800000000000000
+      internalID: -2991790927863107190
       vertices: []
       indices: 
       edges: []

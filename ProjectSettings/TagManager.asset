@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fighter
+  - NPC
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - Actor
   - Blocking
   - Interactable
-  - 
+  - Weapon
   - 
   - 
   - 
@@ -46,6 +49,9 @@ TagManager:
     locked: 0
   - name: Actor
     uniqueID: 2385303347
+    locked: 0
+  - name: Weapon
+    uniqueID: 2978342845
     locked: 0
   - name: Forground
     uniqueID: 1821245539

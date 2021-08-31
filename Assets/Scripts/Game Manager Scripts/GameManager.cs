@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 	public int preferedSkin = 1;
 	public int pesosCount = 0;
 	public int experienceCount = 0;
-	public int weaponLevel = 0;
+	public int weaponLevel = 2;
 
 
 
@@ -57,6 +57,8 @@ public class GameManager : MonoBehaviour
 	{
 		SceneManager.sceneLoaded -= LoadState;
 		SaveSystem.LoadGameData();
+		Weapon playerWeapon = instance.playerController.GetComponentInChildren<Weapon>();
+		//playerWeapon.level = instance.weaponLevel;
 		Debug.Log("Load State -- scene: " + scene.name + " -- mode:  " + loadMode);
 	}
 	// --->> Save State

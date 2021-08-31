@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Fighter
 {
 
-    // Managers
+    // Managers refs
     public InputManager inputManager;
     public MouvementManager mouvementManager;
     public AnimationManager animationManager;
     public CollisionManager collisionManager;
+    public CombatManager combatManager;
 
     // Collider
     public CapsuleCollider2D capsuleCollider2D;

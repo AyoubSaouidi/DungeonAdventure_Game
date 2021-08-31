@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollisionManager : MonoBehaviour
 {
-    // Player CONTROLLER Script
+    // Player CONTROLLER Reference
     public PlayerController playerController;
 
     //public RaycastHit2D rayCastHitX;
